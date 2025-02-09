@@ -31,3 +31,8 @@ cartItems.shift(); // removes kiwis
 
 console.log(cartItems); // logs finilized cart items 
 
+//TASK 4 - Adjusting prices
+let prices = [100, 200, 300]; // sets initial prices
+let discountedPrices = prices.map(price => price * 0.9); // applies at 10 percent discount 
+
+console.Log(discountedPrices); // logs the discounted prices
