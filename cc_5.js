@@ -42,3 +42,9 @@ let inventory = [5, 0, 12, 8, 0]; // declares product quantities
 let availableStock = inventory.filter(quanitity => quanitity > 0); // removes products with zero stock
 
 console.log(availableStock); // logs filtered out inventory
+
+//TASK 6 - Calculating Revenue
+let sales = [500, 300, 200, 400]; // sets sales amounts
+let totalRevenue = sales.reduce((sum, num) => sum + num, 0); // calulcates total revenue
+
+console.log(totalRevenue); 
