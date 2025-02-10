@@ -12,8 +12,8 @@ console.log(`Customer Email: ${customer.email}`);
 // TASK 2 - Creating Order Details
 let order = { // establishes order details
     orderId: 12345,
-    totalAmouint: 150,
-    status: "Processing:"
+    totalAmount: 150,
+    status: "Processing",
 displayOrder: function() {
 
     console.log(`Order ID: ${this.orderId}`); 
@@ -23,7 +23,7 @@ displayOrder: function() {
 };
 
 //TASK 3 - Managing Shopping Cart
-let cartItems = ["Eggs, Milk, Chicken"]; // establishes initial cart
+let cartItems = ["Eggs", "Milk", "Chicken"]; // establishes initial cart
 cartItems.push("Orange Juice"); // adds orange juice
 cartItems.pop(); // removes orange juice
 cartItems.unshift("Kiwis") // adds kiwis to the beginning of the list
@@ -35,11 +35,11 @@ console.log(cartItems);
 let prices = [100, 200, 300]; // sets initial prices
 let discountedPrices = prices.map(price => price * 0.9); // applies at 10 percent discount 
 
-console.Log(discountedPrices); 
+console.log(discountedPrices); 
 
 //TASK 5 - Filtering Products
 let inventory = [5, 0, 12, 8, 0]; // declares product quantities
-let availableStock = inventory.filter(quanitity => quanitity > 0); // removes products with zero stock
+let availableStock = inventory.filter(quantity => quantity > 0); // removes products with zero stock
 
 console.log(availableStock);
 
