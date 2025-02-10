@@ -49,4 +49,8 @@ let totalRevenue = sales.reduce((sum, num) => sum + num, 0); // calulcates total
 
 console.log(totalRevenue); 
 
+//TASK 7 - Searching for a Customer
+let customers = ["Alice", "Bob", "Charlie", "David"]; // lists names of customers
+let foundCustomer = customers.find(name => name === "Charlie"); // finds the customer Charlie
 
+console.log(foundCustomer);
