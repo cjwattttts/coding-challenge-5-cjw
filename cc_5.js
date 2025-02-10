@@ -36,3 +36,9 @@ let prices = [100, 200, 300]; // sets initial prices
 let discountedPrices = prices.map(price => price * 0.9); // applies at 10 percent discount 
 
 console.Log(discountedPrices); // logs the discounted prices
+
+//TASK 5 - Filtering Products
+let inventory = [5, 0, 12, 8, 0]; // declares product quantities
+let availableStock = inventory.filter(quanitity => quanitity > 0); // removes products with zero stock
+
+console.log(availableStock); // logs filtered out inventory
