@@ -62,4 +62,12 @@ function calculateTax(amount, taxRate){ // defines the tax calc function
     return tax;
 }
 
+//TASK 9 - Applying Discounts
+let applyDiscount = function(price, discount) { // defines discount calc function
+    let discountedPrice = price - (price * discount); // calculates discounted price
+    console.log(`Discounted price: $${discountedPrice}`); // logs discounted price
+    return discountedPrice;
+}
+
+
 
