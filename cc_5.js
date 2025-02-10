@@ -63,11 +63,16 @@ function calculateTax(amount, taxRate){ // defines the tax calc function
 }
 
 //TASK 9 - Applying Discounts
-let applyDiscount = function(price, discount) { // defines discount calc function
+let applyDiscount = function(price, discount) { // defines discount function
     let discountedPrice = price - (price * discount); // calculates discounted price
     console.log(`Discounted price: $${discountedPrice}`); // logs discounted price
     return discountedPrice;
 }
 
-
+//TASK 10 - Calculate Loyalty Points
+let calculatePoints = purchaseAmount => { // defines arrow function for points
+    let points = Math.floor(purchaseAmount / 10); // applies one point per ten dollars spent
+    console.log(`Points Earned: ${points}`); // logs loyalty points earned
+    return points;
+}
 
