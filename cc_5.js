@@ -54,3 +54,12 @@ let customers = ["Alice", "Bob", "Charlie", "David"]; // lists names of customer
 let foundCustomer = customers.find(name => name === "Charlie"); // finds the customer Charlie
 
 console.log(foundCustomer);
+
+//TASK 8 - Calculate taxes
+function calculateTax(amount, taxRate){ // defines the tax calc function
+    let tax = amount * taxRate; // calculates tax
+    console.log(`Tax on $${amount} at ${taxRate * 100}%: $${tax}`); // logs tax information
+    return tax;
+}
+
+
